@@ -1,0 +1,2 @@
+C:\Users\uwuna\CppOpenGl\OpenGl\x64\Debug\OpenGl.exe
+C:\Users\uwuna\CppOpenGl\TryingOpenGl\OpenGl\x64\Debug\OpenGl.exe

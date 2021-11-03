@@ -1,0 +1,4 @@
+﻿  glad.c
+  Main.cpp
+C:\Users\uwuna\CppOpenGl\TryingOpenGl\OpenGl\Main.cpp(107,39): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+  OpenGl.vcxproj -> C:\Users\uwuna\CppOpenGl\TryingOpenGl\OpenGl\x64\Debug\OpenGl.exe

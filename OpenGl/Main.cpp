@@ -1,6 +1,24 @@
 #include<iostream>
+#include <map>
 #include<glad/glad.h>
+
+#include <string>
+#include <fstream>
+#include <sstream>
+
 #include<GLFW/glfw3.h>
+
+#include <glm/vec3.hpp> 
+#include <glm/vec4.hpp> 
+#include <glm/mat4x4.hpp> 
+
+#include <ft2build.h>
+#include FT_FREETYPE_H
+
+
+
+
+
 
 //IDK HOW THAT WORKS - COPIED & PASTED
 const char* vertexShaderSource = "#version 330 core\n"
@@ -18,6 +36,11 @@ const char* fragmentShaderSource = "#version 330 core\n"
 "}\n\0";
 
 int main() {
+
+	
+
+	
+
 	//Initializing GLFW
 	glfwInit();
 
@@ -46,6 +69,10 @@ int main() {
 	glfwMakeContextCurrent(window);
 	//GLAD loading so it will configure OPENGL
 	gladLoadGL();
+
+	//Enable blending for FREETYPE
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 	//Viewport of OPENGL, creating a color
 	// and clearing back buffer and swapping it with font
@@ -131,6 +158,7 @@ int main() {
 					vertices[i] -= 0.0001f;
 				}
 			}
+			
 			glGenVertexArrays(1, &VAO);
 			glGenBuffers(1, &VBO);
 			//make the vao the current vertex array obj
